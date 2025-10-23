@@ -1,297 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Jolymo Logistics Company Limited. Get in touch for quotes, inquiries, or logistics support. We're here to help with your supply chain needs.">
-    <meta name="keywords" content="contact Jolymo Logistics, logistics inquiry, get quote, Tanzania logistics contact, freight forwarding quote">
-    <meta name="author" content="Jolymo Logistics Company Limited">
-    
-    <!-- Page Title -->
-    <title>Contact Us - Jolymo Logistics Company Limited | Get In Touch</title>
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contact Jolymo Logistics for all your clearing and forwarding needs in Tanzania. Get a free quote today.">
+    <title>Contact Us - Jolymo Logistics Company Limited</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #004E98;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #F2A007;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .form-group input.error,
+        .form-group select.error,
+        .form-group textarea.error {
+            border-color: #dc3545;
+        }
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 5px;
+        }
+        .form-alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        .form-alert.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .contact-info-card {
+            background-color: #F7F7F7;
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            color: #F2A007;
+            margin-bottom: 20px;
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">
-                        <span class="logo-text">JOLYMO</span>
-                        <span class="logo-subtitle">Logistics</span>
-                    </a>
-                </div>
-                
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
-                <!-- Navigation Links -->
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Jolymo Logistics Logo">
+                <span class="logo-text">JOLYMO LOGISTICS</span>
             </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header" style="background: linear-gradient(135deg, rgba(0, 78, 152, 0.85), rgba(0, 51, 102, 0.85)), url('assets/images/cargo.jpg') center/cover no-repeat; padding: 150px 0 100px; text-align: center; color: white;">
         <div class="container">
-            <h1>Contact Us</h1>
-            <p>We're here to help with your logistics needs</p>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: white;">Get in Touch</h1>
+            <p style="font-size: 1.5rem; opacity: 0.95;">Let's discuss how we can help your business grow</p>
         </div>
     </section>
 
-    <!-- Contact Information Section -->
-    <section class="contact-info-section">
+    <!-- Contact Info Cards -->
+    <section style="padding: 80px 0; background-color: white;">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Reach out to us through any of the following channels</p>
+            <h2 class="section-title">Contact Information</h2>
+            <p class="section-subtitle">We're here to help with all your logistics needs</p>
             
             <div class="contact-info-grid">
-                <!-- Address -->
                 <div class="contact-info-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Our Office</h3>
-                    <p>Dar es Salaam</p>
-                    <p>Tanzania</p>
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: #004E98; margin-bottom: 10px;">Email Us</h3>
+                    <p style="line-height: 1.8;">info@jolymo.co.tz</p>
+                    <p style="line-height: 1.8;">support@jolymo.co.tz</p>
                 </div>
                 
-                <!-- Phone -->
                 <div class="contact-info-card">
-                    <div class="contact-icon">📞</div>
-                    <h3>Phone</h3>
-                    <p>+255 XX XXX XXXX</p>
-                    <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: #004E98; margin-bottom: 10px;">Call Us</h3>
+                    <p style="line-height: 1.8;">+255 XXX XXX XXX</p>
+                    <p style="line-height: 1.8;">+255 XXX XXX XXX</p>
                 </div>
                 
-                <!-- Email -->
                 <div class="contact-info-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>info@jolymo.co.tz</p>
-                    <p>We'll respond within 24 hours</p>
-                </div>
-                
-                <!-- Business Hours -->
-                <div class="contact-info-card">
-                    <div class="contact-icon">🕐</div>
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: #004E98; margin-bottom: 10px;">Visit Us</h3>
+                    <p style="line-height: 1.8;">Jolymo Logistics Company Ltd</p>
+                    <p style="line-height: 1.8;">Dar es Salaam, Tanzania</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form and Map Section -->
-    <section class="contact-form-section">
+    <!-- Contact Form Section -->
+    <section style="padding: 80px 0; background-color: #F7F7F7;">
         <div class="container">
-            <div class="contact-form-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h2>Send Us a Message</h2>
-                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-                    
-                    <!-- Form integrated with Formspree -->
-                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-                        <!-- Name Field -->
-                        <div class="form-group">
-                            <label for="name">Full Name <span class="required">*</span></label>
-                            <input 
-                                type="text" 
-                                id="name" 
-                                name="name" 
-                                placeholder="Enter your full name"
-                                required
-                            >
-                            <span class="error-message" id="nameError"></span>
-                        </div>
-                        
-                        <!-- Email Field -->
-                        <div class="form-group">
-                            <label for="email">Email Address <span class="required">*</span></label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                placeholder="Enter your email address"
-                                required
-                            >
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-                        
-                        <!-- Phone Field -->
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input 
-                                type="tel" 
-                                id="phone" 
-                                name="phone" 
-                                placeholder="Enter your phone number"
-                            >
-                            <span class="error-message" id="phoneError"></span>
-                        </div>
-                        
-                        <!-- Service Field -->
-                        <div class="form-group">
-                            <label for="service">Service of Interest</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service</option>
-                                <option value="customs">Customs Clearing</option>
-                                <option value="freight">Freight Forwarding</option>
-                                <option value="transport">Transportation</option>
-                                <option value="warehouse">Warehousing</option>
-                                <option value="consultancy">Consultancy</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <!-- Message Field -->
-                        <div class="form-group">
-                            <label for="message">Message <span class="required">*</span></label>
-                            <textarea 
-                                id="message" 
-                                name="message" 
-                                rows="5" 
-                                placeholder="Tell us about your logistics needs..."
-                                required
-                            ></textarea>
-                            <span class="error-message" id="messageError"></span>
-                        </div>
-                        
-                        <!-- Hidden field for recipient email -->
-                        <input type="hidden" name="_replyto" value="info@jolymo.co.tz">
-                        <input type="hidden" name="_subject" value="New Contact Form Submission from Jolymo Website">
-                        
-                        <!-- Submit Button -->
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                        
-                        <!-- Form Status Message -->
-                        <div id="formStatus" class="form-status"></div>
-                    </form>
-                </div>
-                
-                <!-- Map Placeholder -->
-                <div class="map-wrapper">
-                    <h2>Our Location</h2>
-                    <div class="map-placeholder">
-                        <!-- Google Maps Placeholder -->
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.344656890447!2d39.27362931477493!3d-6.839083395057147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b4d3b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                            width="100%" 
-                            height="400" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Jolymo Logistics Location Map">
-                        </iframe>
-                    </div>
-                    
-                    <!-- Quick Contact Info -->
-                    <div class="quick-contact">
-                        <h3>Quick Contact</h3>
-                        <p><strong>Email:</strong> info@jolymo.co.tz</p>
-                        <p><strong>Phone:</strong> +255 XX XXX XXXX</p>
-                        <p><strong>Address:</strong> Dar es Salaam, Tanzania</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title">Send Us a Message</h2>
+            <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
             
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>What areas do you serve?</h3>
-                    <p>We provide services throughout Tanzania and have extensive networks across East Africa and international destinations.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
                 </div>
                 
-                <div class="faq-item">
-                    <h3>How do I get a quote?</h3>
-                    <p>You can request a quote by filling out the contact form above, emailing us, or calling our office directly.</p>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                 </div>
                 
-                <div class="faq-item">
-                    <h3>What documents do I need for customs clearing?</h3>
-                    <p>Required documents typically include commercial invoice, packing list, bill of lading, and import/export permits. Our team will guide you through the specific requirements.</p>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+255 XXX XXX XXX">
                 </div>
                 
-                <div class="faq-item">
-                    <h3>Do you offer tracking services?</h3>
-                    <p>Yes, we provide real-time tracking for all shipments, giving you full visibility of your cargo's location and status.</p>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Select a subject --</option>
+                        <option value="Customs Clearing">Customs Clearing</option>
+                        <option value="Freight Forwarding">Freight Forwarding</option>
+                        <option value="Import/Export Consultancy">Import/Export Consultancy</option>
+                        <option value="Warehousing & Distribution">Warehousing & Distribution</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Partnership Opportunity">Partnership Opportunity</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your logistics needs..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding: 80px 0; background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Our office location in Dar es Salaam</p>
+            
+            <div class="map-container">
+                <div style="text-align: center; padding: 40px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 24 24" stroke="#999" style="margin-bottom: 20px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                    </svg>
+                    <p style="font-size: 1.125rem; color: #666;">
+                        <strong>Google Maps Integration Placeholder</strong><br>
+                        Replace this section with your actual Google Maps embed code<br>
+                        Visit: <a href="https://www.google.com/maps" target="_blank" style="color: #004E98;">Google Maps</a>
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Business Hours Section -->
+    <section style="padding: 80px 0; background-color: #F7F7F7;">
+        <div class="container">
+            <h2 class="section-title">Business Hours</h2>
+            <div style="max-width: 600px; margin: 40px auto 0; background-color: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                <div style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #e0e0e0;">
+                    <span style="font-weight: 600; color: #004E98;">Monday - Friday:</span>
+                    <span>8:00 AM - 6:00 PM</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #e0e0e0;">
+                    <span style="font-weight: 600; color: #004E98;">Saturday:</span>
+                    <span>9:00 AM - 2:00 PM</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 15px 0;">
+                    <span style="font-weight: 600; color: #004E98;">Sunday:</span>
+                    <span>Closed</span>
+                </div>
+                <p style="margin-top: 25px; text-align: center; color: #666; font-style: italic;">
+                    For urgent matters outside business hours, please email info@jolymo.co.tz
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Ship with Confidence?</h2>
+            <p>Experience hassle-free logistics with Jolymo's expert team</p>
+            <a href="services.html" class="btn btn-primary">Explore Our Services</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <!-- Company Info -->
-                <div class="footer-column">
+            <div class="footer-content">
+                <div class="footer-section">
                     <h3>Jolymo Logistics</h3>
-                    <p>Your trusted partner for comprehensive logistics solutions in Tanzania and beyond.</p>
+                    <p>Your trusted partner in clearing, forwarding, and logistics solutions across East and Central Africa.</p>
                 </div>
-                
-                <!-- Quick Links -->
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
-                <!-- Services -->
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="services.html#customs">Customs Clearing</a></li>
-                        <li><a href="services.html#freight">Freight Forwarding</a></li>
-                        <li><a href="services.html#transport">Transportation</a></li>
-                        <li><a href="services.html#warehouse">Warehousing</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="footer-column">
+                <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <ul class="footer-contact">
+                    <ul class="contact-list">
                         <li>📧 info@jolymo.co.tz</li>
-                        <li>📞 +255 XX XXX XXXX</li>
+                        <li>📞 +255 XXX XXX XXX</li>
                         <li>📍 Dar es Salaam, Tanzania</li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Copyright -->
             <div class="footer-bottom">
-                <p>&copy; 2025 Jolymo Logistics Company Limited. All rights reserved.</p>
+                <p>&copy; 2024 Jolymo Logistics Company Limited. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
