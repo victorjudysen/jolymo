@@ -778,6 +778,37 @@ img {
     gap: 12px !important;
 }
 
+/* Modern Service Cards */
+.service-card-modern:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 50px rgba(0, 78, 152, 0.2) !important;
+    border-color: rgba(242, 160, 7, 0.3) !important;
+}
+
+.service-card-modern:hover img {
+    transform: scale(1.15);
+}
+
+.service-card-modern a:hover {
+    background: rgba(0, 78, 152, 0.1) !important;
+    gap: 12px !important;
+}
+
+.service-card-modern a:hover span {
+    transform: translateX(4px);
+}
+
+/* Footer Link Hover Effects */
+.footer a:hover {
+    color: #F2A007 !important;
+    transform: translateX(5px);
+}
+
+.footer .social-icons a:hover {
+    background: #F2A007 !important;
+    transform: translateY(-3px) !important;
+}
+
 /* Responsive Design for New Sections */
 @media (max-width: 968px) {
     /* Company Overview responsive */
