@@ -869,3 +869,17 @@ img {
     }
 }
 
+/* ========================================
+   STATISTICS CARDS HOVER EFFECTS
+   ======================================== */
+/* Statistics card hover effect */
+section[style*="Our Impact in Numbers"] div[style*="backdrop-filter: blur(10px)"] {
+    cursor: pointer;
+}
+
+section[style*="Our Impact in Numbers"] div[style*="backdrop-filter: blur(10px)"]:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
