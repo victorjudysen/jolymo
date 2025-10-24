@@ -346,6 +346,39 @@ function addFadeInStyles() {
 }
 
 // ========================================
+// BACK TO TOP BUTTON
+// ========================================
+/**
+ * Show/hide back to top button and handle smooth scroll to top
+ */
+function initBackToTop() {
+    // Create back to top button
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.className = 'back-to-top';
+    backToTopBtn.innerHTML = '↑';
+    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    backToTopBtn.setAttribute('title', 'Back to top');
+    document.body.appendChild(backToTopBtn);
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+    
+    // Scroll to top when clicked
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// ========================================
 // PAGE LOAD INITIALIZATION
 // ========================================
 /**
@@ -370,6 +403,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize scroll animations
     addFadeInStyles();
     initScrollAnimations();
+    
+    // Initialize back to top button
+    initBackToTop();
     
     console.log('✓ Jolymo Logistics website initialized');
 });
